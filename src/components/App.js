@@ -7,7 +7,7 @@ function App() {
     let p = document.createElement('p')
     // let p = document.querySelector('p')
     p.setAttribute('id', 'para')
-    p.innerText = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy "
+    p.innerText = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
     // p.classList.remove('d-none')
     // p.classList.add('show')
     
