@@ -12,7 +12,7 @@ function App() {
     }
   return (
     <div id="main">
-      <button onClick={para}>Click</button>
+      <button id='click' onClick={para}>Click</button>
 
     </div>
   );
