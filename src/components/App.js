@@ -1,26 +1,17 @@
 import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
-
-class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy",
-      click: 0
-
-    }
-  };
-
-  render() {
+  function App(){
+    const [cls,setCls] = useState('d-none');
+ 
+    const text = "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
     return (
       <div id="main">
-        { /* Do not remove this main div!! */}
-        <button id="click" onClick={() => this.setState({ count: this.state.count + 1 })}>Button</button>
-        <h6 id="para">{this.state.text}</h6>
+        <button id="click" onClick={() => setCls((cls) => cls ==='d-none' ? 'show' : 'd-none')}>Click Here</button>
+        <h4 id="para" className={cls}>{text}</h4>
       </div>
     );
-  }
+  // }
 }
 
 
