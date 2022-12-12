@@ -11,7 +11,6 @@ import "./../styles/App.css";
         <h4 id="para" className={cls}>{text}</h4>
       </div>
     );
-  // }
 }
 
 
